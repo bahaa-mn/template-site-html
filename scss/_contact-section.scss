@@ -1,0 +1,69 @@
+
+#contact-section form {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#contact-section .name-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-section .name-inputs .form-control {
+    width: 48%;
+}
+
+#contact-section .name-inputs .form-control input {
+    width: 100%;
+}
+
+#contact-section .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    box-sizing: border-box;
+
+    .link-btn {
+        margin: 0px 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        background: transparent;
+        border: 3px solid $dark-blue-grey;
+        border-radius: 50%;
+        color: $dark-blue-grey;
+        transition: all 0.25s ease;
+        transition-delay: 0;
+
+        &:hover {
+            cursor: pointer;
+            background: $dark-blue-grey;
+            color: $light-blue-grey;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    }
+}
+
+#email-copied{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: .85em;
+    display: none;
+}
+
+#email-copied.show{
+    display: block;
+}

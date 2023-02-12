@@ -1,0 +1,84 @@
+@keyframes device-anim {
+    0% {
+        width: 640px;
+        height: 360px;
+        background: green;
+    }
+    10% {
+        width: 640px;
+        height: 360px;
+        background: green;
+    }
+    25% {
+        width: 240px;
+        height: 320px;
+        background: lightblue;
+    }
+    35% {
+        width: 240px;
+        height: 320px;
+        background: lightblue;
+    }
+    50% {
+        width: 90px;
+        height: 210px;
+        background: blue;
+    }
+    60% {
+        width: 90px;
+        height: 210px;
+        background: blue;
+    }
+    75% {
+        width: 240px;
+        height: 320px;
+        background: lightgreen;
+    }
+    85% {
+        width: 240px;
+        height: 320px;
+        background: lightgreen;
+    }
+    100% {
+        width: 640px;
+        height: 360px;
+        background: green;
+    }
+}
+
+#animated-device {
+    width: 640px;
+    height: 360px;
+    background: green;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animated-device.animate {
+    animation: device-anim 15s infinite;
+}
+
+#animated-device .bloc-anim{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animated-device .img-container{
+    min-width: 90px;
+    display: none;
+}
+
+#animated-device .text-container{
+    min-width: 90px;
+    display: none;
+}
+
+#animated-device .text-line-title{
+    
+}
+
+#animated-device .text-line-description{
+    
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Quicksand:wght@700&family=Raleway:wght@500&display=swap");
+
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+@import "vars";
+@import "animated-device";
+@import "sections";
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: transparent;
+    color: $dark-blue;
+
+    transition: all 1.5s ease;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+    p{
+        margin: 0;
+    }
+}
+
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}

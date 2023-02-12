@@ -1,0 +1,59 @@
+
+#footer-section{
+    display: flex;
+    flex-direction: column;
+
+    .subsection{
+        height: 50%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+#footer-section .subsection {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-section .subsection .title {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Quicksand";
+    margin-top: 30px;
+}
+
+#footer-section .subsection .description {
+    width: 50%;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "Raleway";
+    margin-top: 15px;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+
+@media (max-width: $breakpoint-middle) {
+    #footer-section .subsection .description {
+        width: 75%;
+    }
+}
+
+@for $i from 1 through 3 {
+    #footer-section .subsection .elem:nth-of-type(#{$i}) {
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all .75s ease;
+        transition-delay: $i * 0.15s;
+    }
+
+    #footer-section.info-section.show .subsection .elem:nth-of-type(#{$i}) {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@import 'contact-section';
+@import 'avis-section';
